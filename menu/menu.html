@@ -1,0 +1,242 @@
+<html>
+<head>
+    <title>Lốp Quán Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+        .menu-container {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+        .menu-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #4b2e2e;
+        }
+        .menu-header p {
+            margin: 0;
+            font-size: 14px;
+            color: #4b2e2e;
+        }
+        .menu-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .menu-column {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+        .menu-column h2 {
+            font-size: 18px;
+            color: #4b2e2e;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .menu-item span {
+            color: #4b2e2e;
+        }
+        .menu-footer {
+            text-align: center;
+            font-size: 12px;
+            color: #4b2e2e;
+        }
+        .receipt {
+            background-color: #fff;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .receipt h1, .receipt h2, .receipt h3, .receipt p {
+            margin: 0;
+            text-align: center;
+        }
+        .receipt h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .receipt h2 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .receipt h3 {
+            font-size: 14px;
+            margin: 10px 0;
+        }
+        .receipt p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        .receipt .details {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .receipt .details p {
+            margin: 2px 0;
+        }
+        .receipt .items {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .receipt .items th, .receipt .items td {
+            border-bottom: 1px dashed #000;
+            padding: 5px;
+            text-align: left;
+            font-size: 12px;
+        }
+        .receipt .items th {
+            text-align: center;
+        }
+        .receipt .total {
+            text-align: right;
+            margin-top: 10px;
+        }
+        .receipt .total p {
+            margin: 2px 0;
+        }
+        .receipt .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .sticky {
+            position: sticky;
+            bottom: 150px;
+            background-color: rgb(32, 165, 20);
+            color: white;
+            padding: 10px;
+        }
+        @media (max-width: 600px) {
+            .menu-column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-header">
+            <h1>LỐP QUÁN</h1>
+            <p>COFFEE & TEA</p>
+        </div>
+        <div class="menu-section">
+            <div class="menu-column">
+                <h2>BEST SELLER <i class="fas fa-star"></i></h2>
+                <div class="menu-item"><span>Trà sữa kem trứng</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Trà sữa kem cheese</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Matcha machiato</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Trà sữa socola kem trứng</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Trà sữa TCDD kem trứng</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Khoai môn machiato</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Milo dầm kem trứng</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Matcha latte xoài</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Trà sen machiato</span><span>M: 20k</span><span>L: 25k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>ĐÁ XAY <i class="fas fa-ice-cream"></i></h2>
+                <div class="menu-item"><span>Đá xay việt quất</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Đá xay xoài</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Đá xay socola</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Đá xay matcha machiato</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Đá xay matcha</span><span>M: 20k</span><span>L: 25k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>TRÀ SỮA (TEA) <i class="fas fa-coffee"></i></h2>
+                <div class="menu-item"><span>Trà sữa truyền thống</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà sữa thạch đường đen</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà sữa đào</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà sữa dâu</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà sữa quất</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà sữa kem cheese</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Trà sữa socola</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Trà sữa trân châu trắng</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Trà sữa khoai môn kem trứng</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Trà sữa matcha trân châu trắng</span><span>M: 20k</span><span>L: 25k</span></div>
+                <div class="menu-item"><span>Milo dầm</span><span>M: 20k</span><span>L: 25k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>TRÀ TRÁI CÂY <i class="fas fa-lemon"></i></h2>
+                <div class="menu-item"><span>Trà chanh</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà đào</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà dâu</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà việt quất</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà xoài</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Trà chanh thái xanh</span><span>M: 15k</span><span>L: 20k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>MATCHA <i class="fas fa-leaf"></i></h2>
+                <div class="menu-item"><span>Matcha kem trứng</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Matcha pudding</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Matcha trân châu đen</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Matcha trân châu trắng</span><span>M: 25k</span><span>L: 30k</span></div>
+                <div class="menu-item"><span>Matcha latte</span><span>M: 25k</span><span>L: 30k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>SỮA CHUA <i class="fas fa-ice-cream"></i></h2>
+                <div class="menu-item"><span>Sữa chua</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Sữa chua dâu</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Sữa chua việt quất</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Sữa chua socola</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Sữa chua xoài</span><span>M: 15k</span><span>L: 20k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>CÀ PHÊ <i class="fas fa-coffee"></i></h2>
+                <div class="menu-item"><span>Cà phê đen</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Cà phê sữa</span><span>M: 15k</span><span>L: 20k</span></div>
+                <div class="menu-item"><span>Cacao đá phê</span><span>M: 15k</span><span>L: 20k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>TOPPING THÊM <i class="fas fa-plus"></i></h2>
+                <div class="menu-item"><span>Trân châu đen</span><span>5k</span></div>
+                <div class="menu-item"><span>Trân châu trắng</span><span>5k</span></div>
+                <div class="menu-item"><span>Thạch dừa</span><span>5k</span></div>
+                <div class="menu-item"><span>Thạch phô mai</span><span>5k</span></div>
+                <div class="menu-item"><span>Pudding trứng</span><span>5k</span></div>
+            </div>
+            <div class="menu-column">
+                <h2>ĂN VẶT <i class="fas fa-utensils"></i></h2>
+                <div class="menu-item"><span>Khoai tây chiên</span><span>15k</span></div>
+                <div class="menu-item"><span>Hotdog</span><span>15k</span></div>
+                <div class="menu-item"><span>Xúc xích</span><span>15k</span></div>
+                <div class="menu-item"><span>Nem chua rán</span><span>15k</span></div>
+                <div class="menu-item"><span>Phô mai que</span><span>15k</span></div>
+                <div class="menu-item"><span>Mít chiên tẩm cẩm</span><span>15k</span></div>
+                <div class="menu-item"><span>Mì cay</span><span>20k</span></div>
+            </div>
+        </div>
+        <div class="menu-footer">
+            <p>📍 Lốp Quán</p>
+            <p>📞 0353063445</p>
+            <p>📧 lopquan@gmail.com</p>
+            <p>🌐 www.facebook.com/lopquan</p>
+        </div>
+
+        
+    </div>
+   
+</body>
+</html>
